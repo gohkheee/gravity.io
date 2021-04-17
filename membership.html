@@ -1,0 +1,212 @@
+<<!DOCTYPE html>
+<html>
+<head>
+
+<center>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> Assignment 2 </title>
+
+<a href="https://www.gravityclub.com/">
+<img src="glogo.png" alt="gravity logo" width="270" height="80">
+</a>
+
+<br>
+<br>
+<br>
+
+<style>
+
+body {
+  background-image: url('marble.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {box-sizing: border-box;}
+body {font-family:Nunito, arial}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: Grey;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.2}
+  to {opacity: 0.9}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 20px}
+}
+
+.navbar {
+  width: 100%;
+  background-color: hsla(0, 0%, 75%, 0.1);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 25px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  text-align: center;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid hsla(9, 100%, 60%, 0.9);
+}
+
+
+
+</style>
+</head>
+
+<div class="navbar">
+  <a href="about.html"> ABOUT</a>
+  <a href="facilities.html"> FACILITIES</a>
+  <a href="contact.html">CONTACT </a>
+  <a href="membership.html"> MEMBERSHIP</a>
+</div>
+
+</center>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h1 style="font-family:chalkduster;font-size:30px;color:rgb(220, 20, 60);">Membership</h2>
+
+<table>
+  <tr>
+    <th>Package</th>
+    <th>Duration (Months)</th>
+    <th>Price (/month)</th>
+  </tr>
+  <tr>
+    <td>Lifestyle Membership</td>
+    <td>12</td>
+    <td>$345</td>
+  </tr>
+  <tr>
+	<td>Premier Membership</td>
+    <td>4</td>
+    <td>$375</td>
+  </tr>
+  <tr>
+	<td>Flexi Membership</td>
+    <td>1, month by month</td>
+    <td>$400</td>
+  </tr>
+ </table>
+ <h2 style="font-family:chalkduster;font-size:30px;color:rgb(220, 20, 60);">Start Up Fee</h2>
+ <table>
+  <tr>
+	<th>Option</th>
+	<th>Inclusive of</th>
+    <th>Price</th>
+	</tr>
+  <tr>
+    <td>Option 1</td>
+    <td>5 x 40min Personal Coaching Sessions |<br>Innermost Supplement Bundle - Protein, Booster & Capsules |<br> In-body & Fit 3d Scan </td>
+    <td>$500</td>
+  </tr>
+  <tr>
+    <td>Option 2</td>
+    <td>2 x 40min Personal Coaching Sessions |<br>Innermost Supplement Bundle - Protein, Booster & Capsules |<br> In-body & Fit 3d Scan </td>
+    <td>$300</td>
+  </tr>
+</table>
+<h2 style="font-family:chalkduster;font-size:30px;color:rgb(220, 20, 60);">Start your membership today</h2>
+<p style="color:grey;font-family:chalkboard;font-size:20px">Select your preferred package</p>
+
+<form action="thanks.html">
+  <label for="grvty">Choose a package:</label>
+  <select id="grvty" name="grvty">
+    <option value="lifestlye">Lifestyle</option>
+    <option value="premier">Premier</option>
+    <option value="flexi">Flexi</option>
+    <option value="optone">Option 1</option>
+	<option value="opttwo">Option 2</option>
+  </select>
+  <label for="pay">Payment method:</label>
+  <select id="pay" name="pay">
+    <option value="one">Paynow/Paylah</option>
+    <option value="two">Credit Card</option>
+    <option value="three">By Cash (in person)</option>
+  </select>
+  <br><br>
+  <label for="name">Name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="contact">Contact Number:</label><br>
+  <input type="text" id="contact" name="contact" value=""><br><br>
+  <label for="mail">Email:</label><br>
+  <input type="text" id="mail" name="mail" value=""><br><br> 
+  <input type="submit">
+</form>
+</body>
+</html>

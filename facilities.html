@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Assignment 2 </title>
+
+<a href="https://www.gravityclub.com/">
+<img src="glogo.png" alt="gravity logo" width="270" height="80">
+</a>
+<style>
+
+body {
+  background-image: url('marble.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {box-sizing: border-box;}
+body {font-family:Nunito, arial}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: Grey;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.2}
+  to {opacity: 0.9}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 20px}
+}
+
+.navbar {
+  width: 100%;
+  background-color: hsla(0, 0%, 75%, 0.1);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 25px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  text-align: center;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid hsla(9, 100%, 60%, 0.9);
+}
+
+</style>
+</head>
+
+<div class="navbar">
+  <a href="about.html"> ABOUT</a>
+  <a href="facilities.html"> FACILITIES</a>
+  <a href="contact.html">CONTACT </a>
+  <a href="membership.html"> MEMBERSHIP</a>
+</div>
+
+</centre>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #DC143C;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 50px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:#DC143C;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #DC143C;}
+</style>
+</head>
+<body>
+
+<h2 style="color:rgb(220, 20, 60);font-family:chalkboard;font-size:40px">Facilities</h2>
+<p style="color:grey;font-family:chalkboard;font-size:25px">Here are some of the facilities in store for you</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Click here for a closer look</button>
+  <div class="dropdown-content">
+    <a href="gym.jpg">Gym</a>
+    <a href="pool.jpg">Pool and Jaccuzzi</a>
+    <a href="suite.jpg">Wellness Suite</a>
+	<a href="scanner.jpg">Fit 3D Pro Scanner</a>
+  </div>
+</div>
+
+
+</body>
+</html>
